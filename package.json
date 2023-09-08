@@ -1,0 +1,25 @@
+{
+  "name": "@sf/detect-browser",
+  "version": "1.0.0",
+  "description": "browser-detection",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+
+  "scripts": {
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs":  "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksPotehin/detect-browser.git"
+  },
+  "author": "Maksim Potehin",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
