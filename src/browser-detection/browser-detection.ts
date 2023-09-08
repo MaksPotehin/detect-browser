@@ -8,7 +8,7 @@ export function browserDetection () {
     } else if (navigator.userAgent.indexOf('Firefox') !== -1) {
         return 'Firefox'
     } else if ((navigator.userAgent.indexOf('MSIE') !== -1)) {
-        return 'IE'// crap
+        return 'IE'
     } else {
         return 'Unknown'
     }
